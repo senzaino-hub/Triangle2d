@@ -8,7 +8,8 @@ const destroybtn = document.getElementById("destroybtn");
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-const atlas = Texture("../assets/images/atlas.webp", ctx);
+const atlasPath = document.getElementById("config").dataset.atlas;
+const atlas = Texture(atlasPath, ctx);
 
 let playerX = 96;
 let playerY = 128;
