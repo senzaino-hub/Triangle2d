@@ -1,3 +1,22 @@
+#game {
+  touch-action: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+#game * {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html, body {
+  touch-action: none;
+}
+
+button {
+  user-select: none;
+}
+
 body {
   background: rgba(255, 145, 0, 0.148);
   margin: 0;
