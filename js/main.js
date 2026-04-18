@@ -1,5 +1,13 @@
 import Texture from "./render/texture.js";
 
+document.addEventListener("gesturestart", e => e.preventDefault());
+
+document.addEventListener("contextmenu", e => {
+  e.preventDefault();
+});
+
+document.addEventListener("dragstart", e => e.preventDefault());
+
 const rightbtn = document.getElementById("rightbtn");
 const leftbtn = document.getElementById("leftbtn");
 const jumpbtn = document.getElementById("jumpbtn");
